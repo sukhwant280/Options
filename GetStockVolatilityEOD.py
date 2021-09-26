@@ -26,8 +26,8 @@ stocktickerdf = tickersdf[(tickersdf['exch_seg'] == 'NSE')]
 
 ####generate session #####
 
-obj =SmartConnect(api_key="l7Y6WJSy")
-login = obj.generateSession('S855039', 'TahL0r123')
+obj =SmartConnect(api_key="Your API KEY")
+login = obj.generateSession('ClientID', 'PASSWORD')
 refreshToken = login['data']['refreshToken']
 feedToken = obj.getfeedToken()
 
